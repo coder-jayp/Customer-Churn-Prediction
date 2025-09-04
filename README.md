@@ -33,6 +33,7 @@ This project uses the [Telco Customer Churn dataset (IBM, Kaggle)]
 ## 🗂 Project Structure
 
 Customer-Churn-Project/
+
 │── data/                     # Raw and processed datasets
 │── models/                   # Saved models + metrics + plots
 │── notebooks/                # Jupyter notebooks for experimentation
@@ -43,16 +44,22 @@ Customer-Churn-Project/
 │── README.md                 # Project documentation
 │── requirements.txt          # Python dependencies
 
-# Clone repo
+# Clone 
+
 git clone https://github.com/coder-jayp/Customer-Churn-Prediction.git
+
 cd Customer-Churn-Project
 
 # Create virtual environment
+
 python -m venv venv
+
 source venv/bin/activate   # (Linux/Mac)
+
 venv\Scripts\activate      # (Windows)
 
 # Install dependencies
+
 pip install -r requirements.txt
 
 
@@ -79,6 +86,9 @@ models/shap_summary.png → SHAP explainability
 🏆 Highlights
 
 ✅ End-to-end ML pipeline (ready for production).
+
 ✅ GPU-accelerated training (XGBoost & LightGBM).
+
 ✅ Model explainability with SHAP.
+
 ✅ Clean, modular, and extensible project structure.
