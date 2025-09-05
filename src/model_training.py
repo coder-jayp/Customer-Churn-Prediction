@@ -127,7 +127,7 @@ if best_model_name in ["RandomForest", "GradientBoosting", "XGBoost", "LightGBM"
     plt.close()
 
 explainer = shap.Explainer(final_model, X_train)
-shap_values = explainer(X_test)
+shap_values = explainer(X_test, check_additivity=False)
 
 shap.summary_plot(shap_values, X_test, show=False)
 plt.savefig("models/shap_summary.png")
